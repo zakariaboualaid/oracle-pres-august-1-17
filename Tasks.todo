@@ -8,7 +8,8 @@ Oracle Presentation:
                 sudo dpkg -i puppetlabs-release-pc1-trusty.deb
                 sudo apt-get update
             ☐ https://docs.puppet.com/puppet/4.10/puppet_collections.html#ubuntu-1404-trusty-tahr
-            ☐ apt-get install puppet-agent 
+            ☐ sudo apt-get update
+            ☐ sudo apt-get install puppet-agent 
                 && apt-get install puppetserver
                 && sudo service start puppetserver (requires 2400 mb mini of memory)
 
