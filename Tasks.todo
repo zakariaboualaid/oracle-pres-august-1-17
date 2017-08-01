@@ -3,7 +3,10 @@ Oracle Presentation:
 
     Puppet:
         ☐ Install Puppet in a new VM
-            ☐ https://app.vagrantup.com/ubuntu/boxes/trusty64
+            ✔ https://app.vagrantup.com/ubuntu/boxes/trusty64 @done (8/1/2017, 5:10:23 PM)
+                wget https://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb
+                sudo dpkg -i puppetlabs-release-pc1-trusty.deb
+                sudo apt-get update
             ☐ https://docs.puppet.com/puppet/4.10/puppet_collections.html#ubuntu-1404-trusty-tahr
             ☐ apt-get install puppet-agent 
                 && apt-get install puppetserver
@@ -26,4 +29,11 @@ Oracle Presentation:
 
     Tests and Deployment:
         ☐ Beaker Tests for Testing Puppet Modules
+            ☐ Install RVM
+                > gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+                > \curl -sSL https://get.rvm.io | bash -s stable
+            ☐ Install ruby 2.3
+                > rvm install 2.3
+            ☐ gem install beaker-rspec --no-rdoc --no-ri 
         ☐ r10k
+            ☐ gem install r10k --no-rdoc --no-ri 
