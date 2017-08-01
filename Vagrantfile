@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |c|
     config.vm.network 'private_network', ip: '192.168.20.60'
     config.ssh.forward_agent = false
 
-    config.vm.synced_folder './puppet', '/etc/puppetlabs/code'
+    config.vm.synced_folder './puppet', '/etc/puppetlabs/code', type: 'nfs'
 
     config.vm.provider 'virtualbox' do |vb|
       vb.customize ['modifyvm', :id, '--memory', '2400']

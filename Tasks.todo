@@ -7,7 +7,7 @@ Oracle Presentation:
             ☐ https://docs.puppet.com/puppet/4.10/puppet_collections.html#ubuntu-1404-trusty-tahr
             ☐ apt-get install puppet-agent 
                 && apt-get install puppetserver
-                && systemctl start puppetserver (requires 2400 mb mini of memory)
+                && sudo service start puppetserver (requires 2400 mb mini of memory)
 
         ☐ Generate a new Puppet Module
             ☐ puppet module generate user-apache
