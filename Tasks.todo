@@ -1,0 +1,29 @@
+
+Oracle Presentation:
+
+    Puppet:
+        ☐ Install Puppet in a new VM
+            ☐ https://app.vagrantup.com/ubuntu/boxes/xenial64
+            ☐ https://docs.puppet.com/puppet/5.0/puppet_platform.html#ubuntu-1604-xenial-xerus
+            ☐ apt-get install puppet-agent 
+                && apt-get install puppetserver 
+                && systemctl start puppetserver (requires 2400 mb mini of memory)
+
+        ☐ Generate a new Puppet Module
+            ☐ puppet module generate user-apache
+
+        ☐ Download a Puppet Module from Puppet Forge
+            ☐ https://forge.puppet.com/puppetlabs/apache
+
+        ☐ Walk through init.pp and params.pp
+
+        ☐ Show Hiera files and use them with the downloaded Module
+    
+    Umbreo:
+        ☐ Walk through the Umbreo web app
+        ☐ Run Rails blueprint
+        ☐ Run Jenkins CI blueprint
+
+    Tests and Deployment:
+        ☐ Beaker Tests for Testing Puppet Modules
+        ☐ r10k
